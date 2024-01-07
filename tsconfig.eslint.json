@@ -1,5 +1,13 @@
 {
   "extends": "./tsconfig.json",
-  "compilerOptions": {},
-  "include": ["./**/*.ts", "./**/*.vue"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.astro",
+    "scripts/**/*.ts",
+    "uno.config.ts",
+    "astro.config.ts",
+    ".lintstagedrc.cjs"
+  ]
 }

@@ -4,19 +4,49 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["standard-with-typescript", "plugin:vue/vue3-essential"],
-  "parser": "vue-eslint-parser",
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "@unocss",
+    "plugin:astro/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "parser": "@typescript-eslint/parser",
-    "project": ["./tsconfig.eslint.json"],
-    "extraFileExtensions": [".vue"],
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "tsconfig.eslint.json"
   },
-  "plugins": ["vue"],
+  "ignorePatterns": ["node_modules", "dist", "astro-monorepo"],
+  "overrides": [
+    {
+      "files": ["*.astro"],
+      "parser": "astro-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [".astro"]
+      },
+      "rules": {
+        // override/add rules settings here, such as:
+        // "astro/no-set-html-directive": "error"
+      }
+    }
+  ],
   "rules": {
-    "@typescript-eslint/triple-slash-reference": "off",
-    "@typescript-eslint/strict-boolean-expressions": "off",
-    "@typescript-eslint/explicit-function-return-type": "off"
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "semi": ["error", "never"],
+    "max-len": ["error", { "code": 120, "ignoreStrings": true, "ignorePattern": "^\\s+(class|d)=\"[\\s\\S]+\"$" }],
+
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off"
   }
 }

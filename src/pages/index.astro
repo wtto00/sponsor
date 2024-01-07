@@ -1,0 +1,125 @@
+---
+import alipay from '@/assets/alipay.jpg?url'
+import wechat from '@/assets/wechat.jpg?url'
+import ETH from '@/components/ETH.astro'
+import Paypal from '@/components/Paypal.astro'
+import Layout from '@/layouts/Layout.astro'
+
+interface Item {
+  label: string
+  // 二维码图片
+  qrImg?: string
+  // 跳转链接
+  url?: string
+  // 复制剪切板文本
+  copyText?: string
+  // 按钮图片
+  cover?: string
+  // 按钮
+  component?: (_props: any) => any
+}
+
+const list: Item[] = [
+  { label: '微信', qrImg: wechat },
+  { label: '支付宝', qrImg: alipay },
+  {
+    label: 'buymeacoffee',
+    cover: 'https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png',
+    url: 'https://www.buymeacoffee.com/wtto00',
+  },
+  {
+    label: '爱发电',
+    cover: 'https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.jpg',
+    url: 'https://afdian.net/a/wtto00',
+  },
+  {
+    label: 'Paypal',
+    component: Paypal,
+    url: 'https://www.paypal.me/tatowang',
+  },
+  {
+    label: 'RTH',
+    component: ETH,
+    copyText: '0xc79c734b427411282CB48EA1251844fAF8C8BEbb',
+  },
+]
+---
+
+<Layout>
+  <img src={list[0]?.qrImg} alt={`${list[0]?.label}赞助我`} class="h-40 w-40" />
+  <div class="ml--4 mt-10 max-w-11/12 flex flex-wrap items-center justify-center" id="list-wrap">
+    {
+      list.map((item, index) =>
+        item.component ? (
+          <item.component url={item.url} copyText={item.copyText} />
+        ) : item.cover ? (
+          <img
+            src={item.cover}
+            alt={item.label + '赞助我'}
+            class="ml-4 mt-4 block h-12 cursor-pointer rd-4"
+            data-url={item.url}
+          />
+        ) : (
+          <button
+            class="ml-4 mt-4 h-12 min-w-30 b-2 rd-4 b-solid bg-#FF714C px-5 c-white"
+            class:list={[index ? 'b-transparent' : 'b-#008EB3']}
+            data-qr-img={item.qrImg}
+            data-label={item.label}
+          >
+            {item.label}
+          </button>
+        )
+      )
+    }
+  </div>
+</Layout>
+
+<style>
+  :root {
+    color-scheme: light dark;
+  }
+  body {
+    --uno: min-h-screen flex flex-col justify-center items-center px-1/12;
+  }
+  button {
+    --uno: hover-op-80 active-op-90;
+  }
+</style>
+
+<script>
+  const list = document.querySelector<HTMLDivElement>('#list-wrap')
+  const img = list?.previousElementSibling as HTMLImageElement
+
+  const items = Array.from(list?.children || []) as HTMLElement[]
+
+  items.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      items.forEach((el, idk) => {
+        const qrImg = el.dataset.qrImg
+        if (index === idk) {
+          // check
+          if (qrImg) {
+            el.classList.remove('b-transparent')
+            el.classList.add('b-#008EB3')
+            img.src = window.location.origin + (qrImg || '')
+            img.alt = (el.dataset.label || '') + '赞助我'
+          } else {
+            if (el.dataset.url) {
+              window.open(el.dataset.url, '_blank')
+            } else {
+              if (el.dataset.copyText) {
+                navigator.clipboard?.writeText(el.dataset.copyText).then(() => {
+                  window.alert('已复制公钥地址到剪切板')
+                })
+              }
+            }
+          }
+        } else if (qrImg) {
+          // uncheck
+          el.classList.remove('b-#008EB3')
+          el.classList.add('b-transparent')
+        }
+      })
+    })
+  })
+</script>

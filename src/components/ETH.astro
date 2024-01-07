@@ -1,0 +1,22 @@
+---
+interface Props {
+  copyText: string
+}
+
+const { copyText } = Astro.props
+---
+
+<button
+  class="ml-4 mt-4 h-12 flex items-center justify-center rd-4 bg-#26335F px-10"
+  tabindex="0"
+  aria-label="ETH"
+  data-copy-text={copyText}
+>
+  <img
+    class="mr-2 h-5"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIGFyaWEtaGlkZGVuPSJ0cnVlIiB2aWV3Qm94PSIwIDAgMjggMjAiPjxwYXRoIGZpbGw9IiMwMDAiIGQ9Ik0wIDBoMjh2MTkuOTk3SDB6Ii8+PHBhdGggZD0iTTEzLjYwNSA3LjU0Nkw5IDkuNjRsNC42MDUgMi43MiA0LjYwMy0yLjcyLTQuNjAzLTIuMDk0eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik05IDkuNjRsNC42MDUgMi43MlYyTDkgOS42NHpNMTMuNjA1IDJ2MTAuMzZsNC42MDMtMi43MkwxMy42MDUgMnpNOSAxMC41MTNMMTMuNjA1IDE3di0zLjc2N0w5IDEwLjUxM3pNMTMuNjA1IDEzLjIzM1YxN2w0LjYwNy02LjQ4Ny00LjYwNyAyLjcyeiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="
+    alt="ETH"
+    aria-label="pp"
+  />
+  ETH
+</button>
