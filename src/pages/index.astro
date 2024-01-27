@@ -2,7 +2,6 @@
 import alipay from '@/assets/alipay.jpg?url'
 import wechat from '@/assets/wechat.jpg?url'
 import ETH from '@/components/ETH.astro'
-import Paypal from '@/components/Paypal.astro'
 import Layout from '@/layouts/Layout.astro'
 
 interface Item {
@@ -31,11 +30,6 @@ const list: Item[] = [
     label: '爱发电',
     cover: 'https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.jpg',
     url: 'https://afdian.net/a/wtto00',
-  },
-  {
-    label: 'Paypal',
-    component: Paypal,
-    url: 'https://www.paypal.me/tatowang',
   },
   {
     label: 'RTH',
