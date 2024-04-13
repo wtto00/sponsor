@@ -10,7 +10,7 @@ dependencies:
     version: 0.5.10(prettier-plugin-astro@0.13.0)(prettier@3.2.5)(typescript@5.4.5)
   astro:
     specifier: ^4.5.5
-    version: 4.6.1(@types/node@20.12.5)(typescript@5.4.5)
+    version: 4.6.1(@types/node@20.12.7)(typescript@5.4.5)
   typescript:
     specifier: ^5.4.2
     version: 5.4.5
@@ -18,7 +18,7 @@ dependencies:
 devDependencies:
   '@types/node':
     specifier: ^20.11.28
-    version: 20.12.5
+    version: 20.12.7
   '@typescript-eslint/eslint-plugin':
     specifier: ^7.2.0
     version: 7.6.0(@typescript-eslint/parser@7.6.0)(eslint@8.57.0)(typescript@5.4.5)
@@ -1224,8 +1224,8 @@ packages:
       '@types/unist': 2.0.10
     dev: false
 
-  /@types/node@20.12.5:
-    resolution: {integrity: sha512-BD+BjQ9LS/D8ST9p5uqBxghlN+S42iuNxjsUGjeZobe/ciXzk2qb1B6IXc6AnRLS+yFJRpN2IPEHMzwspfDJNw==}
+  /@types/node@20.12.7:
+    resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
     dependencies:
       undici-types: 5.26.5
 
@@ -1429,7 +1429,7 @@ packages:
       '@unocss/core': 0.59.2
       '@unocss/reset': 0.59.2
       '@unocss/vite': 0.59.2(vite@5.2.8)
-      vite: 5.2.8(@types/node@20.12.5)
+      vite: 5.2.8(@types/node@20.12.7)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -1653,7 +1653,7 @@ packages:
       chokidar: 3.6.0
       fast-glob: 3.3.2
       magic-string: 0.30.9
-      vite: 5.2.8(@types/node@20.12.5)
+      vite: 5.2.8(@types/node@20.12.7)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -1851,7 +1851,7 @@ packages:
       - typescript
     dev: true
 
-  /astro@4.6.1(@types/node@20.12.5)(typescript@5.4.5):
+  /astro@4.6.1(@types/node@20.12.7)(typescript@5.4.5):
     resolution: {integrity: sha512-gcL22NEhuRi4wu9/x5Kn2eJf7nT6GeU5BxdN6AHbUnX6UzEDIWtpgHs5lBIZYExKbHKN9PjEGXWQzQtFwLU+5g==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
@@ -1912,7 +1912,7 @@ packages:
       tsconfck: 3.0.3(typescript@5.4.5)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.2.8(@types/node@20.12.5)
+      vite: 5.2.8(@types/node@20.12.7)
       vitefu: 0.2.5(vite@5.2.8)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -5100,7 +5100,7 @@ packages:
       '@unocss/transformer-directives': 0.59.2
       '@unocss/transformer-variant-group': 0.59.2
       '@unocss/vite': 0.59.2(vite@5.2.8)
-      vite: 5.2.8(@types/node@20.12.5)
+      vite: 5.2.8(@types/node@20.12.7)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -5164,7 +5164,7 @@ packages:
       vfile-message: 4.0.2
     dev: false
 
-  /vite@5.2.8(@types/node@20.12.5):
+  /vite@5.2.8(@types/node@20.12.7):
     resolution: {integrity: sha512-OyZR+c1CE8yeHw5V5t59aXsUPPVTHMDjEZz8MgguLL/Q7NblxhZUlTu9xSPqlsUO/y+X7dlU05jdhvyycD55DA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5192,7 +5192,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.12.5
+      '@types/node': 20.12.7
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.14.2
@@ -5207,7 +5207,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.2.8(@types/node@20.12.5)
+      vite: 5.2.8(@types/node@20.12.7)
     dev: false
 
   /volar-service-css@0.0.34(@volar/language-service@2.1.5):
