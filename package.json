@@ -13,26 +13,28 @@
     "check": "astro check",
     "prepare": "husky && echo npx lint-staged > .husky/pre-commit"
   },
+  "packageManager": "pnpm@9.1.0+sha256.22e36fba7f4880ecf749a5ca128b8435da085ecd49575e7fb9e64d6bf4fad394",
   "dependencies": {
-    "@astrojs/check": "^0.5.9",
-    "astro": "^4.5.5",
-    "typescript": "^5.4.2"
+    "@astrojs/check": "^0.6.0",
+    "astro": "^4.7.1",
+    "typescript": "^5.4.5"
   },
   "devDependencies": {
-    "@types/node": "^20.11.28",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
-    "@unocss/eslint-config": "^0.59.0",
-    "@unocss/reset": "^0.59.0",
-    "@unocss/transformer-directives": "^0.59.0",
-    "@unocss/transformer-variant-group": "^0.59.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-astro": "^1.0.0",
-    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "@eslint/js": "^9.2.0",
+    "@types/node": "^20.12.11",
+    "@unocss/eslint-config": "^0.60.0",
+    "@unocss/reset": "^0.60.0",
+    "@unocss/transformer-directives": "^0.60.0",
+    "@unocss/transformer-variant-group": "^0.60.0",
+    "eslint": "^9.2.0",
+    "eslint-plugin-astro": "^1.1.2",
+    "eslint-plugin-simple-import-sort": "^12.1.0",
+    "globals": "^15.1.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
-    "unocss": "^0.59.0"
+    "typescript-eslint": "^7.8.0",
+    "unocss": "^0.60.0"
   }
 }
