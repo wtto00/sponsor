@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint --fix --color --cache --ext .js,.cjs,.mjs,.ts,.tsx,.astro .",
+    "lint": "eslint --color --cache .",
     "format": "prettier . --write --ignore-unknown --plugin=prettier-plugin-astro",
     "check": "astro check",
     "prepare": "husky && echo npx lint-staged > .husky/pre-commit"
