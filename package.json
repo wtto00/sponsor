@@ -13,7 +13,7 @@
     "check": "astro check",
     "prepare": "husky && echo npx lint-staged > .husky/pre-commit"
   },
-  "packageManager": "pnpm@9.3.0",
+  "packageManager": "pnpm@9.4.0",
   "dependencies": {
     "@astrojs/check": "^0.7.0",
     "astro": "^4.10.2",
