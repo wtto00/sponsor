@@ -34,8 +34,8 @@ importers:
         specifier: ^0.61.0
         version: 0.61.0
       '@unocss/transformer-variant-group':
-        specifier: ^0.61.0
-        version: 0.61.0
+        specifier: ^0.61.3
+        version: 0.61.3
       eslint:
         specifier: ^9.6.0
         version: 9.6.0
@@ -969,9 +969,6 @@ packages:
 
   '@unocss/transformer-directives@0.61.3':
     resolution: {integrity: sha512-FNJCOlXwi62tVXr4B8lDkHGxOIhNJw2qQpM5jeohLT7xpGPOmVvscWaWI0h6fjSREFwnnbRNif4YPLe/rB6PsA==}
-
-  '@unocss/transformer-variant-group@0.61.0':
-    resolution: {integrity: sha512-5DHEram3iv+c9jPQW8p629aFyptyzdP5yNnRSMLBZcwyJ672VAKzPUZLYHh5UOUb69eaet3og1cU8uxpHhGKtQ==}
 
   '@unocss/transformer-variant-group@0.61.3':
     resolution: {integrity: sha512-F7v05kfVDhIJ4lu3fjgkwV2GWoeJX4aszER8iqhwWz+0jVUaJRYAxzsVqE299uJ0ut07d+Di+JB7M4ZBRoH3qw==}
@@ -3720,7 +3717,7 @@ snapshots:
 
   '@unocss/rule-utils@0.61.0':
     dependencies:
-      '@unocss/core': 0.61.0
+      '@unocss/core': 0.61.3
       magic-string: 0.30.10
 
   '@unocss/rule-utils@0.61.3':
@@ -3758,10 +3755,6 @@ snapshots:
       '@unocss/core': 0.61.3
       '@unocss/rule-utils': 0.61.3
       css-tree: 2.3.1
-
-  '@unocss/transformer-variant-group@0.61.0':
-    dependencies:
-      '@unocss/core': 0.61.0
 
   '@unocss/transformer-variant-group@0.61.3':
     dependencies:
