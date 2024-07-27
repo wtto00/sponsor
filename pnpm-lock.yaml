@@ -31,8 +31,8 @@ importers:
         specifier: ^0.61.0
         version: 0.61.0
       '@unocss/transformer-directives':
-        specifier: ^0.61.0
-        version: 0.61.0
+        specifier: ^0.61.6
+        version: 0.61.6
       '@unocss/transformer-variant-group':
         specifier: ^0.61.0
         version: 0.61.0
@@ -873,6 +873,9 @@ packages:
   '@unocss/core@0.61.3':
     resolution: {integrity: sha512-9vixY1i5E0DQFtHJz/pHyFlFsiXJgL1bKHuocbl+GUi09lY/gE9TRm2qr2JOJx/BF720tMv9VxYI8Zq3EyPOXA==}
 
+  '@unocss/core@0.61.6':
+    resolution: {integrity: sha512-z1O1fnMRvmX1zkvbKVZ7jKUOHZHw/tUBYDNpll1rx9wjmps/MHfv7K5C5FiOTaW9S9H5r2LSjW/MaMs0dxgoCw==}
+
   '@unocss/eslint-config@0.61.3':
     resolution: {integrity: sha512-WH7UtTw79V6jXoW8amlvkGRDRni2qQYrR6j3EXcLVp2TroAyCc3hoHaySPn9WH1SROFFRVUXCuTSHZwOLH2TIQ==}
     engines: {node: '>=14'}
@@ -923,12 +926,12 @@ packages:
   '@unocss/reset@0.61.3':
     resolution: {integrity: sha512-WegQ6Plmr/H0D9wuKCVjhUMzi/xAn55A0mJgUnKl1pJHTZetRdK29u0bnpVQzynmlh/Lh4YtD+X4r8DVkASgPw==}
 
-  '@unocss/rule-utils@0.61.0':
-    resolution: {integrity: sha512-MCdmfhE6Q9HSWjWqi2sx5/nnKyOEhfhoo+pVumHIqkHQICQ/LuKioFf7Y7e5ycqjFE/7dC2hKGZJ8WTMGIOMwA==}
-    engines: {node: '>=14'}
-
   '@unocss/rule-utils@0.61.3':
     resolution: {integrity: sha512-XwzXE6YUAEc1+4TvJruZfntIM7eo+HdQDMlMI289w9YLLAXw973fp00E9U1dR16JRt1BWzlCnnY1RHAqSiXCVw==}
+    engines: {node: '>=14'}
+
+  '@unocss/rule-utils@0.61.6':
+    resolution: {integrity: sha512-OkAYqCWfbrBDBVfbulYx/6fWeEAVrw37/8VqsSlHD9UDc0Khz/M/4R+9oBhnNfdmqs3VccA2k7PdS5l5dghwzw==}
     engines: {node: '>=14'}
 
   '@unocss/scope@0.61.3':
@@ -943,11 +946,11 @@ packages:
   '@unocss/transformer-compile-class@0.61.3':
     resolution: {integrity: sha512-qHxJtRo+yjC0d+IIoNrOxnO8j5bdw7R4XDpR8+MKpGZgVQRmEGwl7Ej0PUGTudVknYGUdPmDTZGr693bzhwzQg==}
 
-  '@unocss/transformer-directives@0.61.0':
-    resolution: {integrity: sha512-15nIynJPYFYnW/TUQu0NyZ5uxTDcrRyY8sB3axcYZOqqlu1hgPFotVukl6jqCZgGUR1AbfbnJwuDlcBQeT8xpA==}
-
   '@unocss/transformer-directives@0.61.3':
     resolution: {integrity: sha512-FNJCOlXwi62tVXr4B8lDkHGxOIhNJw2qQpM5jeohLT7xpGPOmVvscWaWI0h6fjSREFwnnbRNif4YPLe/rB6PsA==}
+
+  '@unocss/transformer-directives@0.61.6':
+    resolution: {integrity: sha512-k+NzDoO0+uwL9HjOWzIFLWwsxzw7K1aIeq0ZbzbHRSsZmlUWVNEAZ+bczX/HMpjUglM/FrTWux600B/jMBshJg==}
 
   '@unocss/transformer-variant-group@0.61.0':
     resolution: {integrity: sha512-5DHEram3iv+c9jPQW8p629aFyptyzdP5yNnRSMLBZcwyJ672VAKzPUZLYHh5UOUb69eaet3og1cU8uxpHhGKtQ==}
@@ -3557,6 +3560,8 @@ snapshots:
 
   '@unocss/core@0.61.3': {}
 
+  '@unocss/core@0.61.6': {}
+
   '@unocss/eslint-config@0.61.3(eslint@9.6.0)(typescript@5.5.3)':
     dependencies:
       '@unocss/eslint-plugin': 0.61.3(eslint@9.6.0)(typescript@5.5.3)
@@ -3647,14 +3652,14 @@ snapshots:
 
   '@unocss/reset@0.61.3': {}
 
-  '@unocss/rule-utils@0.61.0':
-    dependencies:
-      '@unocss/core': 0.61.0
-      magic-string: 0.30.10
-
   '@unocss/rule-utils@0.61.3':
     dependencies:
       '@unocss/core': 0.61.3
+      magic-string: 0.30.10
+
+  '@unocss/rule-utils@0.61.6':
+    dependencies:
+      '@unocss/core': 0.61.6
       magic-string: 0.30.10
 
   '@unocss/scope@0.61.3': {}
@@ -3676,16 +3681,16 @@ snapshots:
     dependencies:
       '@unocss/core': 0.61.3
 
-  '@unocss/transformer-directives@0.61.0':
-    dependencies:
-      '@unocss/core': 0.61.0
-      '@unocss/rule-utils': 0.61.0
-      css-tree: 2.3.1
-
   '@unocss/transformer-directives@0.61.3':
     dependencies:
       '@unocss/core': 0.61.3
       '@unocss/rule-utils': 0.61.3
+      css-tree: 2.3.1
+
+  '@unocss/transformer-directives@0.61.6':
+    dependencies:
+      '@unocss/core': 0.61.6
+      '@unocss/rule-utils': 0.61.6
       css-tree: 2.3.1
 
   '@unocss/transformer-variant-group@0.61.0':
