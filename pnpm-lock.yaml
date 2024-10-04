@@ -28,8 +28,8 @@ importers:
         specifier: ^0.62.4
         version: 0.62.4(eslint@9.11.1(jiti@1.21.6))(typescript@5.6.2)
       '@unocss/reset':
-        specifier: ^0.62.4
-        version: 0.62.4
+        specifier: ^0.63.1
+        version: 0.63.1
       '@unocss/transformer-directives':
         specifier: ^0.62.3
         version: 0.62.3
@@ -910,6 +910,9 @@ packages:
 
   '@unocss/reset@0.62.4':
     resolution: {integrity: sha512-CtxjeDgN39fY/eZDLIXN4wy7C8W7+SD+41AlzGVU5JwhcXmnb1XoDpOd2lzMxc/Yy3F5dIJt2+MRDj9RnpX9Ew==}
+
+  '@unocss/reset@0.63.1':
+    resolution: {integrity: sha512-gjSF0LeWwkNCYZ4Z/AnQXGCIOPUGL5Ll1IIDfwnKZeFGCj9QmcV1hki4xf/7N8mNHhfP0nYdJpdAfiznhKdkwQ==}
 
   '@unocss/rule-utils@0.62.3':
     resolution: {integrity: sha512-qI37jHH//XzyR5Y2aN3Kpo4lQrQO+CaiXpqPSwMLYh2bIypc2RQVpqGVtU736x0eA6IIx41XEkKzUW+VtvJvmg==}
@@ -3737,6 +3740,8 @@ snapshots:
       '@unocss/rule-utils': 0.62.4
 
   '@unocss/reset@0.62.4': {}
+
+  '@unocss/reset@0.63.1': {}
 
   '@unocss/rule-utils@0.62.3':
     dependencies:
