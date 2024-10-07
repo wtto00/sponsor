@@ -34,8 +34,8 @@ importers:
         specifier: ^0.62.3
         version: 0.62.3
       '@unocss/transformer-variant-group':
-        specifier: ^0.63.1
-        version: 0.63.1
+        specifier: ^0.63.3
+        version: 0.63.3
       eslint:
         specifier: ^9.11.1
         version: 9.11.1(jiti@1.21.6)
@@ -870,8 +870,8 @@ packages:
   '@unocss/core@0.62.4':
     resolution: {integrity: sha512-Cc+Vo6XlaQpyVejkJrrzzWtiK9pgMWzVVBpm9VCVtwZPUjD4GSc+g7VQCPXSsr7m03tmSuRySJx72QcASmauNQ==}
 
-  '@unocss/core@0.63.1':
-    resolution: {integrity: sha512-scg53c6vw8cRsX4DbUO+MlTXicA9GWztm6PW0lsisJxXrdbQQCd+J+PIhrxLUExxeNqxTKsL3Msy9bwJU5uUsQ==}
+  '@unocss/core@0.63.3':
+    resolution: {integrity: sha512-LPDog+Dt36ut9yomgpKDHn4j/kI72sWtxm3iL6agEK3NDQToQsizQU6f8ZsIyUrpi7CoIV2i+3vmsdxauBd4kw==}
 
   '@unocss/eslint-config@0.62.4':
     resolution: {integrity: sha512-bulYXf80MhTlN2oG/d1r23/FJTNiGxK/gG+p9nl/UeJZc5NOnes7fsqVscFTXDxVQGVIFgeKfch3DRmzlxHe9Q==}
@@ -946,8 +946,8 @@ packages:
   '@unocss/transformer-variant-group@0.62.4':
     resolution: {integrity: sha512-W1fxMc2Lzxu4E+6JBQEBzK+AwoCQYI+EL2FT2BCUsAno37f3JdnwFFEVscck0epSdmdtidsSLDognyX8h10r8A==}
 
-  '@unocss/transformer-variant-group@0.63.1':
-    resolution: {integrity: sha512-Awk9FDpvZM8m9YY46MThYYZ81fY6HVs4pOX22xcbw06J2l8z3WyG5iHIzx0f8vCTNwTekDuxD6vV3UlQKoI+0w==}
+  '@unocss/transformer-variant-group@0.63.3':
+    resolution: {integrity: sha512-Dpxb649mcZkpXWodDEIOQoE5gfcpSuuBjLE8H0OyivLVPqYw2Y5S7goXKuV7o9mce+QWJz+aJK1dtthJIcOpIg==}
 
   '@unocss/vite@0.62.4':
     resolution: {integrity: sha512-JKq3V6bcevYl9X5Jl3p9crArbhzI8JVWQkOxKV2nGLFaqvnc47vMSDxlU4MUdRWp3aQvzDw132tcx27oSbrojw==}
@@ -3651,7 +3651,7 @@ snapshots:
 
   '@unocss/core@0.62.4': {}
 
-  '@unocss/core@0.63.1': {}
+  '@unocss/core@0.63.3': {}
 
   '@unocss/eslint-config@0.62.4(eslint@9.11.1(jiti@1.21.6))(typescript@5.6.2)':
     dependencies:
@@ -3778,9 +3778,9 @@ snapshots:
     dependencies:
       '@unocss/core': 0.62.4
 
-  '@unocss/transformer-variant-group@0.63.1':
+  '@unocss/transformer-variant-group@0.63.3':
     dependencies:
-      '@unocss/core': 0.63.1
+      '@unocss/core': 0.63.3
 
   '@unocss/vite@0.62.4(rollup@4.21.1)(vite@5.4.8(@types/node@22.5.5))':
     dependencies:
