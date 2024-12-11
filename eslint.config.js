@@ -24,6 +24,7 @@ export default [
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
       'max-len': ['error', { code: 120, ignoreStrings: true, ignorePattern: '^\\s+(class|d)="[\\s\\S]+"$' }],
+      '@typescript-eslint/triple-slash-reference': 'off',
     },
   },
 ]
