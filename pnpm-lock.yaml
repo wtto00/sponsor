@@ -34,8 +34,8 @@ importers:
         specifier: ^0.63.4
         version: 0.63.4
       '@unocss/transformer-variant-group':
-        specifier: ^0.63.4
-        version: 0.63.4
+        specifier: ^0.65.1
+        version: 0.65.1
       eslint:
         specifier: ^9.14.0
         version: 9.14.0(jiti@1.21.6)
@@ -949,9 +949,6 @@ packages:
 
   '@unocss/transformer-directives@0.65.1':
     resolution: {integrity: sha512-6D3QSeSWXCA+Jc+BQGwat0RfcNtYZdyFFpP+zr1cFpK7nwNZqwqZU+mcY8nywu/u+hYuEQMWPMzEYDAssMfUQQ==}
-
-  '@unocss/transformer-variant-group@0.63.4':
-    resolution: {integrity: sha512-uEHltdfR0Y1nvs1eqHwsgevRFhZkLmA/MsaMEfNblDJ6CLHe/ACNmMoLX1Mcuq/lAPs0X6jGnKudk4QTrCv15Q==}
 
   '@unocss/transformer-variant-group@0.65.1':
     resolution: {integrity: sha512-LdSPDVpVCrMfgTKtGyWz0KkBXiJqFO8FRhiL4/9Hyaf+ECoWQ7RODgO6dKWyFIZEBjkLFK2toeZZvM+KYQlBlw==}
@@ -3824,10 +3821,6 @@ snapshots:
       '@unocss/rule-utils': 0.65.1
       css-tree: 3.0.1
 
-  '@unocss/transformer-variant-group@0.63.4':
-    dependencies:
-      '@unocss/core': 0.63.4
-
   '@unocss/transformer-variant-group@0.65.1':
     dependencies:
       '@unocss/core': 0.65.1
@@ -3919,7 +3912,7 @@ snapshots:
       '@vue/compiler-ssr': 3.5.12
       '@vue/shared': 3.5.12
       estree-walker: 2.0.2
-      magic-string: 0.30.12
+      magic-string: 0.30.15
       postcss: 8.4.47
       source-map-js: 1.2.1
 
