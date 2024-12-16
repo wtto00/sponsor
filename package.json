@@ -34,7 +34,7 @@
     "lint-staged": "^15.2.11",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
-    "typescript-eslint": "^8.18.0",
+    "typescript-eslint": "^8.18.1",
     "unocss": "^0.65.1"
   }
 }
