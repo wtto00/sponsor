@@ -49,8 +49,8 @@ importers:
         specifier: ^12.1.1
         version: 12.1.1(eslint@9.16.0(jiti@2.6.1))
       globals:
-        specifier: ^15.13.0
-        version: 15.13.0
+        specifier: ^17.5.0
+        version: 17.5.0
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -1682,8 +1682,12 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@15.13.0:
-    resolution: {integrity: sha512-49TewVEz0UxZjr1WYYsWpPrhyC/B/pA8Bq0fUmet2n+eR7yn0IvNzNaoBwnK6mdkzcN+se7Ez9zUgULTz2QH4g==}
+  globals@15.15.0:
+    resolution: {integrity: sha512-7ACyT3wmyp3I61S4fG682L0VA2RGD9otkqGJIwNUMF1SWUombIIk+af1unuDYgMm082aHYwD+mzJvv9Iu8dsgg==}
+    engines: {node: '>=18'}
+
+  globals@17.5.0:
+    resolution: {integrity: sha512-qoV+HK2yFl/366t2/Cb3+xxPUo5BuMynomoDmiaZBIdbs+0pYbjfZU+twLhGKp4uCZ/+NbtpVepH5bGCxRyy2g==}
     engines: {node: '>=18'}
 
   globby@11.1.0:
@@ -4386,7 +4390,7 @@ snapshots:
       astro-eslint-parser: 1.1.0(typescript@5.7.3)
       eslint: 9.16.0(jiti@2.6.1)
       eslint-compat-utils: 0.6.4(eslint@9.16.0(jiti@2.6.1))
-      globals: 15.13.0
+      globals: 15.15.0
       postcss: 8.4.49
       postcss-selector-parser: 7.0.0
     transitivePeerDependencies:
@@ -4560,7 +4564,9 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@15.13.0: {}
+  globals@15.15.0: {}
+
+  globals@17.5.0: {}
 
   globby@11.1.0:
     dependencies:
